@@ -1,0 +1,15 @@
+[TfrmCSorceGen]
+FormVersion=0
+Flags=0
+ShowCmd=1
+PixelsPerInch=96
+MinMaxPos(1920x1200)=-1,-1,-1,-1
+MinMaxPos=-1,-1,-1,-1
+NormPos(1920x1200)=272,315,1017,616
+NormPos=272,315,1017,616
+Visible=0
+deCSourcePath_DialogText=
+deCSourcePath_Text=d:\Embedded\Projects\Universal3PHalfBridgeController\GitHub\Universal3PHalfBridgeController\K66_Firmware\APP_SRC
+edGenFileName_Text=U3HB01_Params
+MinMaxPos(1920x1080)=-1,-1,-1,-1
+NormPos(1920x1080)=208,208,953,509

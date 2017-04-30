@@ -1,0 +1,142 @@
+# MQX timing test.
+# Loop calibration = 574 hardware ticks
+all interrupts did not fire, count is 0
+Parameters
+Board,            K66BLEZ1
+Version,          4.2.0
+CPU,              MK66FX1M0VLQ18 180 MHz
+Generic Revision, 23
+Memory,           256K Internal SRAM
+PSP Revision,     10
+Target,           Int Flash Debug RegABI
+BSP Revision,     01
+Compiler,         IAR Embedded Workbench for ARM
+IO Revision,      31
+PSP build date,   Apr 30 2017 at 12:20:00
+
+Kernel Options
+Has Code Cache, 0
+Has Data Cache, 0
+Kernel Log Support, 1
+Logging Enabled, 0
+Check Errors, 1
+Check Memory Allocation Errors, 1
+Check Validity, 1
+Component Destruction, 1
+Default Time Slice in Ticks, 0
+Exit Enabled, 1
+Has Time Slice, 1
+Include Floating Point I/O, 1
+Is Multiprocessor, 1
+LWLog Time Stamp in Ticks, 0
+Memory Free List Sorted, 1
+Monitor Stack, 1
+Mutex has Polling, 1
+Profiling Enabled, 1
+Run Time Error Check Enabled, 1
+Task Creation Blocks, 1
+Task Destruction, 1
+Time Uses Ticks Only, 1
+Use 32-bit Message Qids, 0
+Use 32-bit Types, 0
+Use Idle Task, 1
+Use Inline Macros, 1
+Use Lwmem Allocator, 1
+
+Resource Usage
+Kernel RAM,   1012
+Memory Block, 12 + data
+Message,      28 + data
+Semaphore,    112
+ISR,          12 * #ints
+Partition,    12 + data
+Msg Queue,    32
+Task,         220 + stack
+Task Queue,   28
+Mutex,        48
+Event,        92
+LWEvent,      36
+LWSem,        28
+LWMem,        12
+
+System Parameters
+Context Switch , 108033 , nsec in , 50 , loops, 19445940 , ns norm 1MHz 
+Service Interrupt and return to task , 369 , nsec in , 50 , loops, 66420 , ns norm 1MHz 
+System Timer/Tick Overhead , 18317 , nsec in , 50 , loops, 3297060 , ns norm 1MHz 
+Task Management
+Create Task , 836928 , nsec in , 50 , loops, 150647040 , ns norm 1MHz 
+Delete Task , 2560367 , nsec in , 50 , loops, 460866060 , ns norm 1MHz 
+Block Task , 108033 , nsec in , 50 , loops, 19445940 , ns norm 1MHz 
+Ready Task , 76144 , nsec in , 50 , loops, 13705920 , ns norm 1MHz 
+Yield Task , 157772 , nsec in , 50 , loops, 28398960 , ns norm 1MHz 
+Task Queues
+Suspend Task , 184217 , nsec in , 50 , loops, 33159060 , ns norm 1MHz 
+Suspend Task Context Switch , 144317 , nsec in , 50 , loops, 25977060 , ns norm 1MHz 
+Resume Task , 91661 , nsec in , 50 , loops, 16498980 , ns norm 1MHz 
+Resume Task Context Switch , 183783 , nsec in , 50 , loops, 33080940 , ns norm 1MHz 
+Memory Management
+Allocate Memory , 122228 , nsec in , 50 , loops, 22001040 , ns norm 1MHz 
+Free Memory , 151900 , nsec in , 50 , loops, 27342000 , ns norm 1MHz 
+Allocate LW-Memory , 105272 , nsec in , 50 , loops, 18948960 , ns norm 1MHz 
+Free LW-Memory , 135994 , nsec in , 50 , loops, 24478920 , ns norm 1MHz 
+Partitions
+Partition Create , 144394 , nsec in , 50 , loops, 25990920 , ns norm 1MHz 
+Partition Allocate Block , 70350 , nsec in , 50 , loops, 12663000 , ns norm 1MHz 
+Partition Free Block , 60783 , nsec in , 50 , loops, 10940940 , ns norm 1MHz 
+Light Weight Semaphores
+Open LW-Semaphore , 144472 , nsec in , 50 , loops, 26004960 , ns norm 1MHz 
+Set LW-Semaphore , 37372 , nsec in , 50 , loops, 6726960 , ns norm 1MHz 
+Set LW-Semaphore Ready Task , 89639 , nsec in , 50 , loops, 16135020 , ns norm 1MHz 
+Set LW-Semaphore Context Switch , 177989 , nsec in , 50 , loops, 32038020 , ns norm 1MHz 
+Wait LW-Semaphore , 52772 , nsec in , 50 , loops, 9498960 , ns norm 1MHz 
+Wait LW-Semaphore Block Task , 149683 , nsec in , 50 , loops, 26942940 , ns norm 1MHz 
+Close LW-Semaphore , 111028 , nsec in , 50 , loops, 19985040 , ns norm 1MHz 
+Light Weight Events
+Open LW-Event , 139183 , nsec in , 50 , loops, 25052940 , ns norm 1MHz 
+Close LW-Event , 93606 , nsec in , 50 , loops, 16849080 , ns norm 1MHz 
+Wait LW-Event (ticks) , 70389 , nsec in , 50 , loops, 12670020 , ns norm 1MHz 
+Set LW-Event , 62533 , nsec in , 50 , loops, 11255940 , ns norm 1MHz 
+Set LW-Event Context Switch , 202022 , nsec in , 50 , loops, 36363960 , ns norm 1MHz 
+Set LW-Event Ready Task , 105428 , nsec in , 50 , loops, 18977040 , ns norm 1MHz 
+Wait LW-Event (ticks) Block Task , 179861 , nsec in , 50 , loops, 32374980 , ns norm 1MHz 
+Message Passing
+Open Message Queue , 83844 , nsec in , 50 , loops, 15091920 , ns norm 1MHz 
+Send Message , 126428 , nsec in , 50 , loops, 22757040 , ns norm 1MHz 
+Send Message Ready Task , 129656 , nsec in , 50 , loops, 23338080 , ns norm 1MHz 
+Send Message Context Switch , 221700 , nsec in , 50 , loops, 39906000 , ns norm 1MHz 
+Receive Message (ticks) , 95511 , nsec in , 50 , loops, 17191980 , ns norm 1MHz 
+Receive Message (ticks) Block Task , 153417 , nsec in , 50 , loops, 27615060 , ns norm 1MHz 
+Close Message Queue , 89833 , nsec in , 50 , loops, 16169940 , ns norm 1MHz 
+Message Pools
+Create Message Pool , 272378 , nsec in , 50 , loops, 49028040 , ns norm 1MHz 
+Delete Message Pool , 243250 , nsec in , 50 , loops, 43785000 , ns norm 1MHz 
+Allocate Message , 62533 , nsec in , 50 , loops, 11255940 , ns norm 1MHz 
+Free Message , 49117 , nsec in , 50 , loops, 8841060 , ns norm 1MHz 
+Semaphores
+Open Semaphore , 332500 , nsec in , 50 , loops, 59850000 , ns norm 1MHz 
+Open Semaphore Fast , 252739 , nsec in , 50 , loops, 45493020 , ns norm 1MHz 
+Set Semaphore , 95550 , nsec in , 50 , loops, 17199000 , ns norm 1MHz 
+Set Semaphore Ready Task , 207083 , nsec in , 50 , loops, 37274940 , ns norm 1MHz 
+Set Semaphore Context Switch , 230256 , nsec in , 50 , loops, 41446080 , ns norm 1MHz 
+Wait Semaphore (ticks) , 76067 , nsec in , 50 , loops, 13692060 , ns norm 1MHz 
+Wait Semaphore (ticks) Block Task , 176750 , nsec in , 50 , loops, 31815000 , ns norm 1MHz 
+Close Semaphore , 214122 , nsec in , 50 , loops, 38541960 , ns norm 1MHz 
+Events
+Open Event , 356144 , nsec in , 50 , loops, 64105920 , ns norm 1MHz 
+Open Event Fast , 243406 , nsec in , 50 , loops, 43813080 , ns norm 1MHz 
+Set Event , 87733 , nsec in , 50 , loops, 15791940 , ns norm 1MHz 
+Set Event Ready Task , 128528 , nsec in , 50 , loops, 23135040 , ns norm 1MHz 
+Set Event Context Switch , 230256 , nsec in , 50 , loops, 41446080 , ns norm 1MHz 
+Wait Event (ticks) , 74278 , nsec in , 50 , loops, 13370040 , ns norm 1MHz 
+Wait Event (ticks) Block Task , 161739 , nsec in , 50 , loops, 29113020 , ns norm 1MHz 
+Close Event , 207550 , nsec in , 50 , loops, 37359000 , ns norm 1MHz 
+Mutexes
+Open Mutex , 165783 , nsec in , 50 , loops, 29840940 , ns norm 1MHz 
+Unlock Mutex , 43361 , nsec in , 50 , loops, 7804980 , ns norm 1MHz 
+Unlock Mutex Ready Task , 89950 , nsec in , 50 , loops, 16191000 , ns norm 1MHz 
+Unlock Mutex Context Switch , 195333 , nsec in , 50 , loops, 35159940 , ns norm 1MHz 
+Lock Mutex , 78050 , nsec in , 50 , loops, 14049000 , ns norm 1MHz 
+Lock Mutex Block Task , 173989 , nsec in , 50 , loops, 31318020 , ns norm 1MHz 
+Close Mutex , 192811 , nsec in , 50 , loops, 34705980 , ns norm 1MHz 
+
+
