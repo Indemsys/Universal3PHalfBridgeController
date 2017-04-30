@@ -2,7 +2,7 @@
 
 "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\arm\bin\armjlink2.dll" 
 
-"D:\Embedded\Projects\Universal3PHalfBridgeController\GitHub\Universal3PHalfBridgeController\K66_Firmware\IAR_proj\OUT\Debug\Exe\U3HB_MQXLib.out" 
+"D:\Embedded\Projects\Universal3PHalfBridgeController\GitHub\Universal3PHalfBridgeController\K66_Firmware\MQX_LIBRARY_O3.a" 
 
 --plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\arm\bin\armbat.dll" 
 
