@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "D:\Embedded\Projects\Universal3PHalfBridgeController\Firmware_opensource\MQX_SRC\settings\MQX_LIBRARY.Debug.general.xcl" --backend -f "D:\Embedded\Projects\Universal3PHalfBridgeController\Firmware_opensource\MQX_SRC\settings\MQX_LIBRARY.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "D:\Embedded\Projects\Universal3PHalfBridgeController\GitHub\Universal3PHalfBridgeController\K66_Firmware\MQX_SRC\settings\MQX_LIBRARY.Debug.general.xcl" --backend -f "D:\Embedded\Projects\Universal3PHalfBridgeController\GitHub\Universal3PHalfBridgeController\K66_Firmware\MQX_SRC\settings\MQX_LIBRARY.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "D:\Embedded\Projects\Universal3PHalfBridgeController\Firmware_opensource\MQX_SRC\settings\MQX_LIBRARY.Debug.general.xcl" "--debug_file=%~1" --backend -f "D:\Embedded\Projects\Universal3PHalfBridgeController\Firmware_opensource\MQX_SRC\settings\MQX_LIBRARY.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "D:\Embedded\Projects\Universal3PHalfBridgeController\GitHub\Universal3PHalfBridgeController\K66_Firmware\MQX_SRC\settings\MQX_LIBRARY.Debug.general.xcl" "--debug_file=%~1" --backend -f "D:\Embedded\Projects\Universal3PHalfBridgeController\GitHub\Universal3PHalfBridgeController\K66_Firmware\MQX_SRC\settings\MQX_LIBRARY.Debug.driver.xcl" 
 
 @echo off 
 :end
